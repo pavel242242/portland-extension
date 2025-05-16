@@ -1,0 +1,82 @@
+{
+  "article": {
+    "title": "Elon Musk Was Donald Trump's Useful Idiot",
+    "publication": "Foreign Policy",
+    "author": "Gideon Lichfield",
+    "date": "2025-05-14",
+    "url": "https://foreignpolicy.com/2025/05/14/elon-musk-donald-trump-doge-russell-vought/",
+    "bias_score": 33,
+    "bias_rating": "High bias",
+    "bias_description": "Significant slant with little attempt at balance"
+  },
+  "bias_assessment": {
+    "language_neutrality": {
+      "score": 3,
+      "evidence": [
+        "Uses term 'useful idiot' in headline",
+        "Describes Musk as 'attention-seeking clown'",
+        "Characterizes approach as 'slapdash'",
+        "Uses phrase 'abject failure'"
+      ]
+    },
+    "source_diversity": {
+      "score": 5,
+      "evidence": [
+        "Cites multiple mainstream sources (NYT, Atlantic, BBC)",
+        "References three books about Musk",
+        "Lacks substantial pro-Musk or pro-DOGE sources",
+        "No direct quotes from DOGE or Musk defenders"
+      ]
+    },
+    "headline_content_alignment": {
+      "score": 7,
+      "evidence": [
+        "Headline claim ('useful idiot') is consistent with article's thesis",
+        "Article builds case that Musk was manipulated",
+        "Conclusion directly states Musk 'got played'"
+      ]
+    },
+    "viewpoint_representation": {
+      "score": 3,
+      "evidence": [
+        "Critical perspective dominates entirety of article",
+        "Brief mention of DOGE's claimed successes only to refute them",
+        "No substantive representation of Musk's or administration's viewpoint",
+        "No quotes from supporters or officials defending the program"
+      ]
+    },
+    "fact_opinion_separation": {
+      "score": 4,
+      "evidence": [
+        "Presents interpretive conclusion ('got played') as fact",
+        "Speculates about Vought's intentions without clear attribution",
+        "Some clear factual statements (dates, quoted admissions)",
+        "Opinion often presented alongside facts without clear delineation"
+      ]
+    },
+    "context_completeness": {
+      "score": 6,
+      "evidence": [
+        "Provides background on Musk's business philosophy",
+        "Explains relationship to Vought and Project 2025",
+        "Limited explanation of broader government efficiency challenges",
+        "Missing context about historical attempts at government reform"
+      ]
+    },
+    "visual_bias_assessment": {
+      "score": "N/A",
+      "evidence": [
+        "No visuals were available in the fetched content for assessment"
+      ]
+    },
+    "transparency_score": {
+      "score": 5,
+      "evidence": [
+        "Author identifies perspective of sources used",
+        "Notes Isaacson biography criticized as 'hagiographic'",
+        "Discloses Amazon affiliate links",
+        "No disclosure of author's potential political alignment"
+      ]
+    }
+  }
+}

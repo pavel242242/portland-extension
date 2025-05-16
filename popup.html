@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GroundNews Bias Check</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: sans-serif;
+            width: 300px;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 16px;
+            margin-top: 0;
+        }
+
+        #results {
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+
+        #results p {
+            margin: 5px 0;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #loading {
+            display: none;
+            /* Hidden by default */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>GroundNews Bias Checker</h1>
+    <button id="checkBiasButton">Check Bias for this Page</button>
+    <div id="loading">Loading...</div>
+    <div id="results" style="display: none;">
+        <p><strong>Source:</strong> <span id="sourceName"></span></p>
+        <p><strong>Bias:</strong> <span id="biasScore"></span></p>
+        <p><strong>Rating:</strong> <span id="rating"></span></p>
+        <p><strong>Description:</strong> <span id="leaningDescription"></span></p>
+        <p><small><em>Checked URL: <span id="checkedUrl"></span></em></small></p>
+    </div>
+    <div id="error-message" class="error" style="display: none;"></div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
