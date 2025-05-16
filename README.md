@@ -10,6 +10,35 @@ GroundNews Bias Checker is a Chrome extension that analyzes the bias and trustwo
 - **Data Streaming (Real):** All analyzed URLs, bias ratings, and user feedback (thumbs up/down) are actually sent via POST requests to real Keboola stream endpoints. This means usage and feedback data are genuinely collected and can be processed on the backend.
 - **UI/UX (Real):** All user interface elements (popup, widget, feedback, loading states) are fully functional and reflect the extension's intended design and workflow.
 
+## Mock API Interface (`example.json`)
+
+The file [`example.json`](./example.json) defines the expected structure of the (future) real API response. This is the interface the extension expects from a bias analysis backend. The current mock in `background.js` returns this structure for every request.
+
+**Example structure:**
+```json
+{
+  "article": {
+    "title": "...",
+    "publication": "...",
+    "author": "...",
+    "date": "...",
+    "url": "...",
+    "bias_score": 33,
+    "bias_rating": "High bias",
+    "bias_description": "Significant slant with little attempt at balance"
+  },
+  "bias_assessment": {
+    "language_neutrality": { "score": 3, "evidence": [ ... ] },
+    "source_diversity": { "score": 5, "evidence": [ ... ] },
+    ...
+  }
+}
+```
+- The `article` object contains metadata and overall bias summary fields.
+- The `bias_assessment` object contains detailed parameter scores and supporting evidence.
+
+**When a real API is implemented, it should return JSON in this format.**
+
 ## Features
 
 - **Automatic Bias Detection:** Analyzes news articles as you browse and displays a badge in the Chrome toolbar.
